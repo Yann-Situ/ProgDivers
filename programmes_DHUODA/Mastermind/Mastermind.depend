@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1400703315 source:d:\utilisateurs\yann's\documents\programation\mastermind\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"Ecriture_secu.h"
+	"Head.h"
+
+1400702498 d:\utilisateurs\yann's\documents\programation\mastermind\ecriture_secu.h
+	<string.h>
+
+1400704315 d:\utilisateurs\yann's\documents\programation\mastermind\head.h
+
+1400703315 source:d:\utilisateurs\yann's\documents\programation\programmes\mastermind\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"Ecriture_secu.h"
+	"Head.h"
+
+1400702498 d:\utilisateurs\yann's\documents\programation\programmes\mastermind\ecriture_secu.h
+	<string.h>
+
+1400704315 d:\utilisateurs\yann's\documents\programation\programmes\mastermind\head.h
+

@@ -1,0 +1,33 @@
+CFLAGS=-Wall -Wextra
+LDFLAGS=
+EXEC=exe
+CC=gcc
+CFILES=$(wildcard *.c)
+OFILES=$(patsubst %.c, obj/%.o, $(CFILES))
+
+
+all: obj dep $(EXEC)
+
+obj:
+	mkdir obj
+
+dep:
+	mkdir dep
+
+$(EXEC): $(OFILES)
+	$(CC) -o $@ $^ ${LDFLAGS}
+
+obj/%.o: %.c
+	$(CC) $(CFLAGS) -o $@ -c $< -MMD -MF $(patsubst obj/%.o,dep/%.d,$@)
+
+.PHONY: clean mrproper
+
+clean:
+	$(RM) $(OFILES) $(patsubst obj/%.o,dep/%.d,$(OFILES))
+
+mrproper: clean
+	$(RM) $(EXEC)
+
+-include $(wildcard *.d)
+
+

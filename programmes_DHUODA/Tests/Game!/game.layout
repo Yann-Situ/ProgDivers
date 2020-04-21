@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="constante.h" open="1" top="0" tabpos="2">
+		<Cursor position="204" topLine="3" />
+	</File>
+	<File name="ecrans_menus.c" open="1" top="1" tabpos="3">
+		<Cursor position="1187" topLine="17" />
+	</File>
+	<File name="ecrans_menus.h" open="1" top="0" tabpos="6">
+		<Cursor position="339" topLine="0" />
+	</File>
+	<File name="fonctions_jouer.c" open="0" top="0" tabpos="9">
+		<Cursor position="115" topLine="0" />
+	</File>
+	<File name="fonctions_jouer.h" open="0" top="0" tabpos="8">
+		<Cursor position="187" topLine="0" />
+	</File>
+	<File name="jouer.c" open="0" top="0" tabpos="10">
+		<Cursor position="77" topLine="0" />
+	</File>
+	<File name="jouer.h" open="0" top="0" tabpos="7">
+		<Cursor position="97" topLine="0" />
+	</File>
+	<File name="main.c" open="1" top="0" tabpos="1">
+		<Cursor position="2468" topLine="40" />
+	</File>
+	<File name="structure.h" open="0" top="0" tabpos="5">
+		<Cursor position="86" topLine="0" />
+	</File>
+	<File name="text.c" open="0" top="0" tabpos="6">
+		<Cursor position="0" topLine="46" />
+	</File>
+	<File name="..\fonction_0\fonction_0.c" open="1" top="0" tabpos="5">
+		<Cursor position="4173" topLine="33" />
+	</File>
+	<File name="..\fonction_0\fonction_0.h" open="1" top="0" tabpos="4">
+		<Cursor position="516" topLine="8" />
+	</File>
+</CodeBlocks_layout_file>

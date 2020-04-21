@@ -1,0 +1,56 @@
+#Grammaire
+
+# $i désigne un token simple
+# * peut désigner un token simple (prend alors le sens nominal) ou un mot qui a une autre signification avec une autre des règles de la grammaire (appel recursif)
+# + désigne un ou des différent matching. un + au début ou à la fin donne la possibilité d'un epsilon
+# % désigne un mot contenant plusieurs tokens, qui seront interprété avec un AND
+
+#Les règles sont écritent ainsi :
+#
+
+$1 o+ * ie+tie -> POSS($1,*)
+* o+ $1 ie+tie -> POSS($1,*)
+$1 ie -> N($1)
+
+$1 o+ * t+ isme -> A1(isme,POSS($1,*))
+* o+ $1 t+ isme -> A1(isme,POSS($1,*))
+$1 t+ isme -> A1(isme,N($1))
+
+$1 o+ * t+ ique -> A1(ique,POSS($1,*))
+* o+ $1 t+ ique -> A1(ique,POSS($1,*))
+$1 t+ ique -> A1(ique,N($1))
+
+$1 o+ * t+ iste -> A1(iste,POSS($1,*))
+* o+ $1 t+ iste -> A1(iste,POSS($1,*))
+$1 t+ iste -> A1(iste,N($1))
+
+# gestion verbes
+$1 er+ier+ter+oter -> V($1)
+* $1 er+ier+ter+oter -> A2(CONJONC_VERBE,V($1),*)
+
+# gestions spécifiques
+exo $1 * ie -> A2(exo,N($1),*)
+endo $1 * ie -> A2(endo,N($1),*)
+
+$1 * o+ log ie -> POSS(log,POSS($1,*))
+
+#gestions suffixes
+* o+ vor e -> A1(vor,*)
+* o+ phag e -> A1(phag,*)
+* o+ phil e -> A1(phil,*)
+* o+ log ue -> A2(log,*)
+* o+ fèr e -> A1(fèr,*)
+* o+ phor e -> A1(phor,*)
+* o+ morph e -> A1(morph,*)
+* o+ soph e -> A1(soph,*)
+* o+ phon e -> A1(phon,*)
+* o+ graph e -> A1(graph,*)
+* o+ naut e -> A1(naut,*)
+* o+ dactyl e -> A1(dactyl,*)
+* o+ bol e -> A1(bol,*)
+* o+ plasm e -> A1(plasm,*)
+
+# règle de secours, servant plutôt de façon intermédiare pour les combos. n'est pas afficher s'il y a d'autres matchs
+$1 * -> A1($1,*)
+
+

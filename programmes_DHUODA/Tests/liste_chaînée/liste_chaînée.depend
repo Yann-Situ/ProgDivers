@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1427297685 source:d:\utilisateurs\yann's\documents\programation\programmes\tests\liste_chaînée\main.c
+	<stdio.h>
+	<stdlib.h>
+	"chainedlist.h"
+
+1427504852 d:\utilisateurs\yann's\documents\programation\programmes\tests\liste_chaînée\chainedlist.h
+
+1427297561 source:d:\utilisateurs\yann's\documents\programation\programmes\tests\liste_chaînée\chainedlist.c
+	<stdio.h>
+	<stdlib.h>
+	"chainedlist.h"
+

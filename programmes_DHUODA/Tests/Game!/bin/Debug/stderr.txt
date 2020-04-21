@@ -1,0 +1,1 @@
+Erreur d'initialisation de la police de caractere : Couldn't open police.ttf

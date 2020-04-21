@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1399481358 source:d:\utilisateurs\yann's\documents\temp\tests\ecriture_secu_test\main.c
+	<stdio.h>
+	<stdlib.h>
+	"fonction.h"
+	<string.h>
+
+1399481472 d:\utilisateurs\yann's\documents\temp\tests\ecriture_secu_test\fonction.h
+	<string.h>
+

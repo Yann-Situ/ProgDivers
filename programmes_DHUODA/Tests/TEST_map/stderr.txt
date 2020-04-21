@@ -1,0 +1,36 @@
+
+/*
+Creation des VARIABLES fini
+*/
+*debut menu*
+*fin menu*
+	*debut de chargermap*
+	..........
+nbniv : 2
+texte[1] : level0
+texte[2] : level1
+*debut menu*
+*fin menu*
+E
+E
+E
+1.1.1.0.0.0.0.0.0.1.
+0.0.0.1.1.1.1.0.0.1.
+0.0.0.1.0.0.0.1.0.0.
+0.0.1.1.0.0.0.1.1.0.
+0.1.1.1.0.0.0.0.1.0.
+1.1.1.0.0.0.0.0.1.0.
+1.0.0.0.0.0.0.0.0.1.
+1.1.0.0.0.0.0.0.1.0.
+0.0.1.1.0.0.0.0.1.0.
+0.0.0.0.1.1.1.1.1.0.
+		*fin lireMAP()*
+		//map mis en place
+*debut de initphysique*
+...............................................................................
+*fin de initphysique*
+niveau choisi : 2 - level1
+	*fin de chargermap*				return 1
+	..........
+		//niveau choisi!
+IMG LOAD ok!	FMOD ok!	

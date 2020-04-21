@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1396898627 source:d:\utilisateurs\yann's\documents\temp\test\creer_variable test\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Header.h"
+
+1387744274 d:\utilisateurs\yann's\documents\temp\test\creer_variable test\header.h
+

@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1386371092 source:d:\utilisateurs\yann's\documents\temp\tableau test\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1396897943 source:d:\utilisateurs\yann's\documents\temp\test\tableau test\main.c
+	<stdio.h>
+	<stdlib.h>
+	"main.h"
+	<string.h>
+
+1396897977 d:\utilisateurs\yann's\documents\temp\test\tableau test\main.h
+

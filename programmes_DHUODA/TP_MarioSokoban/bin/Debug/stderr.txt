@@ -1,0 +1,15 @@
+
+Choix : 10
+# trouve, NumMotAct : 1	# trouve, NumMotAct : 2	# trouve, NumMotAct : 3	# trouve, NumMotAct : 4	# trouve, NumMotAct : 5	# trouve, NumMotAct : 6	# trouve, NumMotAct : 7	# trouve, NumMotAct : 8	# trouve, NumMotAct : 9	# trouve, NumMotAct : 10	OK : 1
+chaine Niveau[0] : level1
+chaine Niveau[1] : level2
+chaine Niveau[2] : level3
+chaine Niveau[3] : level4
+chaine Niveau[4] : level5
+chaine Niveau[5] : level6
+chaine Niveau[6] : level7
+chaine Niveau[7] : level8
+chaine Niveau[8] : level9
+chaine Niveau[9] : levelX
+
+fin de jouer

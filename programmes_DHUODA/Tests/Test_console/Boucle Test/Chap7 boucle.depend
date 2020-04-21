@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1385415309 source:d:\utilisateurs\yann's\documents\temp\chap7 boucle\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+

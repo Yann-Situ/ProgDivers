@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1396980730 source:d:\utilisateurs\yann's\documents\temp\test\lire_ds_un_fichier test\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1396980730 source:d:\utilisateurs\yann's\documents\temp\tests\lire_ds_un_fichier test\main.c
+	<stdio.h>
+	<stdlib.h>
+

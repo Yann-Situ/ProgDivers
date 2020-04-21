@@ -1,0 +1,116 @@
+import os.path
+import sys
+
+from grammar import *
+from nodeword import *
+
+class MatchTree():
+    """
+    classe arborescente contenant à chaque noeud un préfixe du mot correspondant au niveau h de l'input d'une règle. Les filles sont les différentes interprétation des suffixes
+    """
+    def __init__(self, string, kids, pref = ""):
+        self.s = string
+        self.kids = kids
+        self.pref = pref # il faut toujours avoir pref+s= mot de base
+
+    def disp(self, prof = 0, spacebegin = "\n", spaceend = "", spaceprof = "| ", spacebetween = ""):
+        temp = spaceprof*prof
+        temp += self.pref+"_"+self.s
+        temp +=spacebegin
+        for n in self.kids:
+            temp += n.disp(prof+1, spacebegin, spaceend, spaceprof, spacebetween)
+            temp += spacebetween
+        if len(self.kids) > 0 and len(spacebetween) > 0:
+            temp = temp[:-len(spacebetween)] #on enlève l'éventuel spacebetween en trop
+        temp+=spaceend
+        return temp
+    
+    def __str__(self):
+        return self.disp(0,"(",")","",",")
+    
+def match(s, symbol, d):
+    """
+    input : s une string, symbol une string d'un input d'une grammaire, d le dico des tokens
+    retourne [] si incompatible, sinon retourne la liste des prefixes matchant avec symbol (pouvant être $1, * ...)
+    """
+    l = []
+    
+    if symbol == '*':
+        # méthode : on indice 0, on repassera dessus après
+        l += list(range(len(s)+1))
+    elif symbol[0] == '$':
+        for i in range(len(s)):
+            pref = s[:i+1]
+            if pref in d:
+                l.append(i+1)
+    else : #cas des tokens et caractères
+        if symbol == s[:len(symbol)]:
+            l.append(len(symbol))
+    return l
+
+
+def constructMatchTreeAux(s, rshape, d, pref = ""):    
+    if rshape == [] and s == "" :
+            return [], True #true
+    elif s == "" or rshape == []:
+            return [], False # false
+
+    symbol = rshape[0]
+    m = match(s, symbol, d).copy()
+
+    matchlist = []
+    b = False
+    for i in m:
+        ki, boolmatch = constructMatchTreeAux(s[i:], rshape[1:], d, pref+s[:i])
+        if boolmatch : # true, on match au moins avec une règle !
+            matchlist.append(MatchTree(s[i:], ki, pref+s[:i]))
+            b = True
+        else: # false, s[i:] ne match pas rshape[1:]
+            pass
+    return matchlist, b
+
+def constructMatchTree(s, rshape, d):
+    """
+    Construit un MatchTree de s avec l'input de règle rshape et le dico d
+    """
+    ml, boolmatch = constructMatchTreeAux(s, rshape, d)
+    if boolmatch :
+        return MatchTree(s, ml)
+    else :
+        return MatchTree("NOMATCH",[])
+    
+###--------------------------------------------------------------------------###
+
+def constructExprListAux(m, shape, expr, d):
+    if shape == [] and m.s == "":
+        return [expr]
+    else :
+        print('ERROR in constructExprListAux : shape == [] and m.s != "" or the contrary... The matchTree is not correct')
+        return [expr]
+         
+    elist = []
+    c = shape[0]
+    if c == '*':
+        for k in m.kids:
+            elist += constructExprListAux(k, shape[1:], expr, d)
+        ### C'est ici que l'on dois appeler le traitement sur le mot de *
+    elif c[0] == '$':
+        for k in m.kids:
+            tok = m.s[:-len(k.s)]
+            e = expr.replace(c,tok) # on remplace les $i par le token
+            elist += constructExprListAux(k, shape[1:], e, d)
+    else : # token ou lettres
+        for k in m.kids:
+            elist += constructExprListAux(k, shape[1:], expr, d)
+    return elist
+
+def constructExprList(s, r, d):
+    matcht = constructMatchTree(s, r.shape, d)
+    if matcht.s == "NOMATCH":
+        return []
+    else :
+        return contructExprListAux(matcht, r.shape, r.expr, d)
+
+    
+    
+    

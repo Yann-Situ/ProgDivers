@@ -1,0 +1,55 @@
+# depslib dependency file v1.0
+1399648504 source:d:\utilisateurs\yann's\documents\temp\tp_pendu\main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	<time.h>
+	"Header1.h"
+	"dico.h"
+	"Ecrit_secu.h"
+
+1399485748 d:\utilisateurs\yann's\documents\temp\tp_pendu\header1.h
+	<ctype.h>
+	<string.h>
+
+1399486118 source:d:\utilisateurs\yann's\documents\temp\tp_pendu\dico.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+	"dico.h"
+
+1399484370 d:\utilisateurs\yann's\documents\temp\tp_pendu\dico.h
+
+1399484116 d:\utilisateurs\yann's\documents\temp\tp_pendu\ecrit_secu.h
+	<string.h>
+
+1399648689 source:d:\utilisateurs\yann's\documents\programation\tp_pendu\main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	<time.h>
+	"Header1.h"
+	"dico.h"
+	"Ecrit_secu.h"
+
+1399485748 d:\utilisateurs\yann's\documents\programation\tp_pendu\header1.h
+	<ctype.h>
+	<string.h>
+
+1399484370 d:\utilisateurs\yann's\documents\programation\tp_pendu\dico.h
+
+1399484116 d:\utilisateurs\yann's\documents\programation\tp_pendu\ecrit_secu.h
+	<string.h>
+
+1399486118 source:d:\utilisateurs\yann's\documents\programation\tp_pendu\dico.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+	"dico.h"
+

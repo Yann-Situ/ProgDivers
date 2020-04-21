@@ -1,0 +1,26 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <SDL/SDL.h>
+#include <SDL_image.h>// pour SDL_image pour mettre des images autre que bmp
+#include <SDL/SDL_ttf.h>
+
+int main(int argc, char *argv[])
+{
+    if(SDL_Init(SDL_INIT_VIDEO) == -1)
+    {
+        fprintf(stderr, "Erreur d'initialisation de la SDL : %s\n", SDL_GetError()); 
+        exit(EXIT_FAILURE);
+    }
+    
+    SDL_Surface *screen = NULL;
+
+    screen = SDL_SetVideoMode(w, h, 32, SDL_HWSURFACE | SDL_DOUBLEBUF);
+    SDL_WM_SetCaption("texte", NULL);
+
+    SDL_Quit();
+    return EXIT_SUCCESS;
+}
+
+//C:\Program Files (x86)\CodeBlocks\SDL-1.2.15\lib\SDL_image.lib
+//C:\Program Files (x86)\CodeBlocks\MinGW\mingw32\lib\SDL_ttf.lib
+//DL_SetColorKey(SURFACE, SDL_SRCCOLORKEY, SDL_MapRGB(SURFACE->format, R, V, B));

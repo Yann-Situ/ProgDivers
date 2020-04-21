@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1386354740 source:d:\utilisateurs\yann's\documents\temp\first\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
+1396986978 source:d:\utilisateurs\yann's\documents\temp\tests\fonction\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
+1396986978 source:d:\utilisateurs\yann's\documents\programation\tests\fonction\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+

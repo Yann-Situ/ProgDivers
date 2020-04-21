@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="game" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="game" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Debug\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="C:\Program Files (x86)\CodeBlocks\SDL-1.2.15\lib\SDL_image.lib" />
+					<Add library="C:\Program Files (x86)\CodeBlocks\MinGW\mingw32\lib\SDL_ttf.lib" />
+					<Add library="C:\Program Files (x86)\CodeBlocks\MinGW\mingw32\lib\libfmodex.a" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin\Release\Debut_sdl" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="C:\Program Files (x86)\CodeBlocks\SDL-1.2.15\include" />
+		</Compiler>
+		<Linker>
+			<Add library="mingw32" />
+			<Add library="SDLmain" />
+			<Add library="SDL.dll" />
+			<Add library="user32" />
+			<Add library="gdi32" />
+			<Add library="winmm" />
+			<Add library="dxguid" />
+			<Add directory="C:\Program Files (x86)\CodeBlocks\SDL-1.2.15\lib" />
+		</Linker>
+		<Unit filename="constante.h" />
+		<Unit filename="ecrans_menus.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ecrans_menus.h" />
+		<Unit filename="fonctions_jouer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="fonctions_jouer.h" />
+		<Unit filename="jouer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="jouer.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="structure.h" />
+		<Unit filename="text.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\fonction_0\fonction_0.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\fonction_0\fonction_0.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

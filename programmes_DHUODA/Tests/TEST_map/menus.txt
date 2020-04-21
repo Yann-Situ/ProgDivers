@@ -1,0 +1,28 @@
+contient les type de choix ds les menus
+
+#2
+classique
+classique foncé
+
+#10
+Antiphon
+Footsteps
+Dust
+Tired and Awake
+The Windfall
+Out of Nowhere
+Wandering
+Stammer
+Strange
+Undergrowth
+
+;4881:323059
+;24919:216952
+;30750:408285
+;0:325610
+;94230:273432
+;0:21000
+;10000:100000
+;10000:20000
+;1200:20000
+;0:100000

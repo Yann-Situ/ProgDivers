@@ -1,0 +1,16 @@
+while(BonNom != 1)
+    {
+        while(caracAct != '#' || caracAct != EOF )
+        {
+            caracAct = fgetc(fichier);
+        }
+        if(caracAct == EOF)
+        {
+            fprintf(stderr,"lvel non trouvé");
+            return 0;
+        }
+        fgets(Nomprovisoir, 30, fichier);
+        if(comparerChaine(Nomprovisoir,Nomlevel))
+            BonNom = 1;
+
+    }

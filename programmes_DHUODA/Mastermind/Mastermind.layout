@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="Ecriture_secu.h" open="1" top="0" tabpos="3">
+		<Cursor position="1488" topLine="29" />
+	</File>
+	<File name="Head.h" open="1" top="0" tabpos="2">
+		<Cursor position="1049" topLine="40" />
+	</File>
+	<File name="main.c" open="1" top="1" tabpos="1">
+		<Cursor position="426" topLine="2" />
+	</File>
+</CodeBlocks_layout_file>

@@ -1,0 +1,47 @@
+#Grammaire
+
+# $i désigne un token simple
+# * peut désigner un token simple (prend alors le sens nominal) ou un mot qui a une autre signification avec une autre des règles de la grammaire (appel recursif)
+# + désigne un ou des différent matching. un + au début ou à la fin donne la possibilité d'un epsilon
+# % désigne un mot contenant plusieurs tokens, qui seront interprété avec un AND
+
+#Les règles sont écritent ainsi :
+#
+
+# gestion générale utilitaire
+
+* t+ isme -> A1(isme_SUFF,*)
+
+* t+ ique+eux -> A1(ique_SUFF,*)
+
+* t+ iste -> A1(iste_SUFF,*)
+
+* ta+ ti f+ve -> A1(tif_SUFF,*)
+
+$1 o+ * al e+ -> A1(ique_SUFF,A2(CONJONC_ADJ,*,ADJ($1)))
+* o+ $1 al e+ -> A1(ique_SUFF,A2(CONJONC_ADJ,*,ADJ($1)))
+$1 al e+ -> A1(ale_SUFF,ADJ($1))
+
+* t+ oï+i de -> A1(ide_SUFF,*)
+
+* o+ $1 er+ier+ter+oter -> A2(CONJONC_VERBE,V($1),*)
+$1 er+ier+ter+oter -> V($1)
+
+
+# gestions spécifiques
+exo $1 * ie -> A2(exo,N($1),*)
+endo $1 * ie -> A2(endo,N($1),*)
+$1 * o+ log ie -> POSS(log,POSS($1,*))
+
+* o+ log ue -> A2(log,*)
+
+# règle de secours, servant plutôt de façon intermédiare pour les combos. n'est pas afficher s'il y a d'autres matchs
+$1 ie+ -> N($1)
+$1 o+ * e -> A1($1,*)
+* o+ $1 e+ -> A1($1,*)
+$1 o+ * -> A2(CONJONC_ADJ,*,ADJ($1))
+* o+ $1 -> A2(CONJONC_ADJ,*,ADJ($1))
+$1 o+ * ie+tie+e -> POSS($1,*)
+* o+ $1 ie+tie+e+ -> POSS($1,*)
+
+jesuispapa -> N(tif)
