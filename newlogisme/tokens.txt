@@ -47,11 +47,12 @@ hyper	| $1 qui est au dessus 	   | le dessus 	 | au dessus de $1   | surpasser |
 équi	| $1 qui est au même niveau | l'égalité  | le même que $1    | égaliser | égal  |  l'égalité entre $1 et $2
 iso 	| $1 qui est au même niveau | l'égalité  | le même que $1    | égaliser | égal	| l'égalité entre $1 et $2
 meso	| $1 qui est au milieu	    | le milieu  | le milieu de $1   | moyenner	| au milieu | le milieu de $1 et $2
+medi    | $1 qui est dans le milieu	    | le milieu  | l'environnement de $1   | moderer | du milieu | le milieu entre $1 et $2
 mi	| qui est la moitié de $1    | la moitié  | la moitié de $1   |	| médiant | la moitié de $1 et $2
 muta	| $1 qui change	       	     | le changement | le changement de $1 | changer | modifié
 
 poly 	| qui est formé de plusieurs $1 	| plusieurs manières différentes | | | nombreux |
-multi 	| qui est constitué de plusieurs $1 | une multitude de choses | | | diversifié 
+multi 	| qui est constitué de plusieurs $1 | une multitude de choses | | | diversifié
 pluri	| qui comprend plusieurs $1 		| beaucoup de choses | | | nombreux
 plur	| qui comprend plusieurs $1 		| beaucoup de choses | | | nombreux
 mono 	| qui est seulement constitué de $1	| une façon unique | l'unicité de $1 | | seul
@@ -90,9 +91,15 @@ lexic	| $1 qui est relatif au mot	| les mots | les mots de $1 | parler | lexical
 ana 	| $1 qui monte | une montée | la montée de $1 | monter | vers le haut
 syn		| qui est avec $1	| une cohésion | une cohésion avec $1 | unifier | ensemble
 cata 	| $1 qui descend | une descente	| la descente de $1 | descendre | vers le bas
+path    | qui souffre de $1 | une maladie | la maladie de $1 | souffrir | malade
+physi   | $1 qui est relatif à la nature | la nature | la nature intrinsèque de $1 | | naturel
+myst    | $1 qui a un sens caché | le mysticisme | le sens caché de $1 | mystifier | mystique
+anthrop | $1 qui est relatif à l'être humain | l'humain | l'humanité de $1 | humaniser | humain
+eco     | qui touche la gestion d’un ensemble de $1 | la gestion | la gestion d'un ensemble de $1 | gérer | contrôlé
+éco     | qui touche la gestion d’un ensemble de $1 | la gestion | la gestion d'un ensemble de $1 | gérer | contrôlé
 
 #### SUFFIXES ####
-phil 	| qui est passioné par $1 	| l'amour | le goût de $1 | aimer | passioné | qui a une attirance pour $1 | 
+phil 	| qui est passioné par $1 	| l'amour | le goût de $1 | aimer | passioné | qui a une attirance pour $1 |
 vor 	| qui se nourrit de $1 		| l'appetit | la consommation de $1 | dévorer | avalant |
 phag    | qui consomme de $1 		| le mangeur | la consommation de $1 | manger | qui se nourrit | qui ronge de $1
 log 	| le fait d'étudier $1 		| la raison | l'étude de $1 | étudier | scientifique | spécialisé dans le domaine de $1 | la parole
@@ -103,12 +110,16 @@ naut 	| qui navigue dans $1 		| la navigation | la navigation de $1 | naviguer 
 dactyl  | faisant rapport au doigt de $1 | le doigt | le doigt de $1 | montrer du doigt ||
 soph	| qui est spécialiste de $1 | la connaissance | la science de $1 | savoir | savant |
 phor	| qui est porteur de $1 	| un porteur | un porteur de $1 | porter | porteur
-fèr 	| qui contient $1 			| | un porteur de $1 | contenir | porteur
+fèr 	| qui possède $1 			| | un porteur de $1 | posséder | porteur
 bol	| qui jette ou lance $1		| un jet | un jet de $1 | jeter | lancé
 plasm 	| qui est modelé par $1 	| une matière | la matière de $1 | modeler | modelé
-phob	| qui a peur de $1 |	la peur | la peur de $1 | avoir peur | appeuré 
+phob	| qui a peur de $1 |	la peur | la peur de $1 | avoir peur | appeuré
+mèr    | qui est une partie de $1 | la part | la partie de $1 | partitionner | diviser
+mer    | qui est une partie de $1 | la part | la partie de $1 | partitionner | diviser
+thèqu  | qui contient $1 | la boîte | le contenant de $1 | contenir | emboîté
+thequ  | qui contient $1 | la boîte | le contenant de $1 | contenir | emboîté
 
-typ	| qui est formé à partir d'un modèle de $1 | un modèle | le modèle de $1 | 
+typ	| qui est formé à partir d'un modèle de $1 | un modèle | le modèle de $1 |
 tax	| qui est lié à l'ordre de $1 	| l'arrangement | l'ordre de $1 | ordonner | ordonné
 gon	| qui possède des côtés liés à $1 | un côté | les côtés de $1 | | à côtés
 later	| qui est à côté de $1 | un côté | le côté de $1 | | lateral
@@ -138,5 +149,5 @@ id	|					| | l'aspect de $1 | |
 
 
 
-CONJONC_VERBE	| | | | | | $1 de $2  
+CONJONC_VERBE	| | | | | | $1 de $2
 CONJONC_ADJ	| | | |	| | $1 $2
