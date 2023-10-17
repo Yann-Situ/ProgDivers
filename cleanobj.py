@@ -3,12 +3,12 @@ import matplotlib.pyplot as plt
 import os.path
 import sys
 
-## 
+##
 script_path = os.path.abspath(__file__)
 directory_path = script_path[:-len("cleanobj.py")]
 
 if len(sys.argv) < 1:
-    print("Arguments : obj extnsion files\nExample : python3 cleanobj.py bimba.obj")
+    print("Python program that transform every faces into multiple triangular faces.\nArguments : obj extension files\nExample : python3 cleanobj.py LEGO.obj")
     sys.exit()
 ##
 
@@ -18,7 +18,7 @@ def main():
         objname =  objfile.split(".")[0]
         newfile = open(directory_path+objname+"_clean.obj", "w")
         firstfile = open(directory_path+objfile, "r")
-        clean(firstfile, newfile)                
+        clean(firstfile, newfile)
         firstfile.close()
         newfile.close()
     return 0
@@ -33,4 +33,3 @@ def clean(f1, f2):
         else :
             f2.write(l)
 main()
-
