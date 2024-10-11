@@ -10,11 +10,11 @@ bio	| qui concerne la vie de $1				| la vie | la vie de $1 | vivre | vivant | | 
 ero	| $1 qui suscite le désir charnel 			| le désir charnel | le désir de $1 | attirer | attirant
 auto 	| qui applique $1 à soi-même				| soi-même | $1 de soi | faire par ses propres moyens | automatique | $1, de manière automatique
 ego 	| $1 qui est centré sur soi 				| soi | la conscience de soi de $1 | se centrer sur soi | centré sur soi
-meta    | qui va au delà de $1 					| un niveau transcendant | l'idée supérieur à $1 | transcender | transcendant |
+meta    | qui va au delà de $1 					| le niveau transcendant | l'idée supérieur à $1 | transcender | transcendant |
 pedo    | $1 qui est en relation avec l'enfant 	| l'enfance | l'enfant de $1 | | enfantin | $1 qui est en relation avec le sol | le sol
 ortho	| $1 qui est droit 					| la droiture | la droiture de $1 | se dresser | droit |
 aer 	| $1 qui est dans les airs 				| l'air | l'air de $1 | voler | aérien |
-holo 	| $1 qui est entier					| une manière entière |	$1 dans son ensemble |		| entier
+holo 	| $1 qui est entier					| l'entièreté |	$1 dans son ensemble |		| entier
 homo	| $1 qui est de nature identique 			| la similarité | le similarité de $1 | être similaire | similaire | $1 qui est de nature identique à $2
 hétero	| $1 qui est de nature différente 			| la différence | la différence de $1 | être différent | différente | $1 qui est de nature différente à $2
 neo	| $1 qui est nouveau					| la nouveauté | la nouveauté de $1 | innover | nouveau
@@ -25,15 +25,17 @@ proto	| qui est au début de $1 				| le début | le début de $1 | débuter  | 
 primo	| qui est le premier de $1				| le premier | le premier de $1 | être le premier | primaire
 cryo 	| $1 qui est froid					| le froid | la fraîcheur de $1 | refroidir | froid
 psych	| $1 qui est relié à l'esprit				| l'esprit | l'esprit de $1  | réfléchir | psychique
-carni	| $1 qui est lié à la viande				| la viande  | la viande de $1 | | en chair et en os |
-carn	| $1 qui est lié à la viande				| la viande  | la viande de $1 | | en chair et en os |
+carni	| $1 qui est lié à la viande				| la viande  | la viande de $1 | | de chair et d'os |
+carn	| $1 qui est lié à la viande				| la viande  | la viande de $1 | | de chair et d'os |
 herbi 	| $1 qui est lié aux plantes				| les végétaux  | les plantes de $1 | | végétal |
 herb 	| $1 qui est lié aux plantes				| les végétaux  | les plantes de $1 | | végétal |
 végé	| $1 qui est lié aux plantes				| les végétaux  | les plantes de $1 | | végétal |
-cycl	| $1 qui est cyclique					| un cercle	| le cycle de $1   | tourner	| cyclique
+zoo	| $1 qui est lié aux animaux				| les animaux  | l'animal de $1 | | animal |
+cycl	| $1 qui est cyclique					| le cercle	| le cycle de $1   | tourner	| cyclique
 hydro	| $1 qui est lié à l'eau | l'eau		| l'eau de $1	| | aquatique
 
 exo 	| $1 qui est à l'extérieur | l'extérieur | l'extérieur de $1 | sortir | à l'extérieur | $1 à l'extérieur de $2
+ecto 	| $1 qui est à l'extérieur | l'extérieur | l'extérieur de $1 | sortir | à l'extérieur | $1 à l'extérieur de $2
 extra   | $1 qui est à l'extérieur | l'extérieur | en dehors de $1   | sortir | en dehors     | $1 à l'extérieur de $2
 endo    | $1 qui est à l'intérieur | l'intérieur | l'intérieur de $1 | entrer | à l'intérieur | $1 à l'intérieur de $2
 intra   | $1 qui est à l'intérieur | l'intérieur | dans $1           | entrer | dedans        | $1 à l'intérieur de $2
@@ -52,11 +54,11 @@ mi	| qui est la moitié de $1    | la moitié  | la moitié de $1   |	| médiant
 muta	| $1 qui change	       	     | le changement | le changement de $1 | changer | modifié
 
 poly 	| qui est formé de plusieurs $1 	| plusieurs manières différentes | | | nombreux |
-multi 	| qui est constitué de plusieurs $1 | une multitude de choses | | | diversifié
+multi 	| qui est constitué de plusieurs $1 | la diversité | | | diversifié
 pluri	| qui comprend plusieurs $1 		| beaucoup de choses | | | nombreux
 plur	| qui comprend plusieurs $1 		| beaucoup de choses | | | nombreux
-mono 	| qui est seulement constitué de $1	| une façon unique | l'unicité de $1 | | seul
-uni 	| qui est uniquement constitué de $1 | un unique élément | $1 de manière unique | | unique | | le numéro un
+mono 	| qui est seulement constitué de $1	| l'unicité | l'unicité de $1 | | seul
+uni 	| qui est uniquement constitué de $1 | l'unique élément | $1 de manière unique | | unique | | le numéro un
 bi 	| qui est constitué de deux $1 		| deux manières distinctes | le double de $1 | dédoubler | numéro deux | | le numéro deux
 tri 	| qui est constitué de trois $1 	| trois manières distinctes | le triple de $1 | tripler | numéro trois | | le numéro trois
 tetra	| qui est constitué de quatre $1 	| quatre manières distinctes | le quadriple de $1 | quadripler | numéro 4 | | le numéro 4
@@ -66,12 +68,15 @@ kilo	|qui est constitué de 1000 $1 	| 1000  manières distinctes | $1 1000  foi
 giga	|qui est constitué d'un milliard de $1 	| un milliard de manières distinctes | un milliard de $1 | multiplier par un milliard | | | un milliard
 
 macr	| $1 qui est grand | la grandeur | la grandeur de $1 | s'agrandir | grand
-micr	| $1 qui est petit | la petitesse | la petitesse de $1 | réduire | petit
+maxi	| $1 qui est grand | la grandeur | la grandeur de $1 | s'agrandir | grand
+maxim	| $1 qui est grand | la grandeur | la grandeur de $1 | s'agrandir | grand
 mega	| $1 qui est grand | la grandeur | la grandeur de $1 | s'agrandir | grand
+micr	| $1 qui est petit | la petitesse | la petitesse de $1 | réduire | petit
 mini	| $1 qui est petit | la petitesse | la petitesse de $1 | réduire | petit
+minim	| $1 qui est petit | la petitesse | la petitesse de $1 | réduire | petit
 
 ambi	| qui est constitué de deux $1 en même temps | l'ambiguité | l'ambiguité de $1 | | ambigu |
-tuber	| qui est constitué d'une excroissance de $1 | une excroissance | excroissance de $1 |
+tuber	| qui est constitué d'une excroissance de $1 | l'excroissance | excroissance de $1 |
 thanat	| $1 qui est en relation avec la mort | la mort | la mort de $1 | mourir | mourrant
 necr	| $1 qui est en relation avec la mort | la mort | la mort de $1 | mourir | mort
 télé	| $1 qui est à distance | la distance | l'éloignement de $1 | s'éloigner | loin | $1 qui est loin de $2
@@ -82,19 +87,23 @@ magnét	| $1 qui est relatif au magnétisme | le magnétisme | le magnétisme de
 erg	| $1 qui est relatif à l'action | l'action | le travail de $1 | agir | |
 ethn	| $1 qui est relatif au peulpe | le peuple | le peuple de $1 |
 an	| qui est dépourvu de $1 | rien | quelque chose sans $1 | être dépourvu | dépourvu | $1 qui est sans $2
-myth	| $1 qui est une légende | un mythe | la légende de $1 |  | légendaire
+myth	| $1 qui est une légende | le mythe | la légende de $1 |  | légendaire
 lex 	| $1 qui concerne la loi | la loi	| la loi de $1	| | legislatif
 jur		| $1 qui concerne la justice | la justice	| la justice de $1	| | juridique
 jurid	| $1 qui concerne la justice | la justice	| la justice de $1	| | juridique
 juridic	| $1 qui concerne la justice | la justice	| la justice de $1	| | juridique
 lexic	| $1 qui est relatif au mot	| les mots | les mots de $1 | parler | lexical
 ana 	| $1 qui monte | une montée | la montée de $1 | monter | vers le haut
-syn		| qui est avec $1	| une cohésion | une cohésion avec $1 | unifier | ensemble
+syn		| qui est avec $1	| la cohésion | la cohésion avec $1 | unifier | ensemble
+synth		| qui est avec $1	| la cohésion | la cohésion avec $1 | unifier | ensemble
 cata 	| $1 qui descend | une descente	| la descente de $1 | descendre | vers le bas
 path    | qui souffre de $1 | une maladie | la maladie de $1 | souffrir | malade
 physi   | $1 qui est relatif à la nature | la nature | la nature intrinsèque de $1 | | naturel
+mathema | $1 qui est relatif aux mathématiques | les mathématiques | la connaissance de $1 | connaître | mathématique
+mathéma | $1 qui est relatif à la mathématique | la connaissance | la connaissance de $1 | savoir | mathématique
 myst    | $1 qui a un sens caché | le mysticisme | le sens caché de $1 | mystifier | mystique
 anthrop | $1 qui est relatif à l'être humain | l'humain | l'humanité de $1 | humaniser | humain
+andro   | $1 qui est relatif à l'homme | l'homme | l'homme de $1 | masculiniser | homme
 eco     | qui touche la gestion d’un ensemble de $1 | la gestion | la gestion d'un ensemble de $1 | gérer | contrôlé
 éco     | qui touche la gestion d’un ensemble de $1 | la gestion | la gestion d'un ensemble de $1 | gérer | contrôlé
 
@@ -109,32 +118,42 @@ graph 	| qui écrit de $1 			| l'écriture | l'écriture de $1 | écrire | écri
 naut 	| qui navigue dans $1 		| la navigation | la navigation de $1 | naviguer | naviguant
 dactyl  | faisant rapport au doigt de $1 | le doigt | le doigt de $1 | montrer du doigt ||
 soph	| qui est spécialiste de $1 | la connaissance | la science de $1 | savoir | savant |
-phor	| qui est porteur de $1 	| un porteur | un porteur de $1 | porter | porteur
+phor	| qui est porteur de $1 	| le porteur | un porteur de $1 | porter | porteur
 fèr 	| qui possède $1 			| | un porteur de $1 | posséder | porteur
-bol	| qui jette ou lance $1		| un jet | un jet de $1 | jeter | lancé
-plasm 	| qui est modelé par $1 	| une matière | la matière de $1 | modeler | modelé
+bol	| qui jette ou lance $1		| le jet | un jet de $1 | jeter | lancé
+plasm 	| qui est modelé par $1 	| la matière | la matière de $1 | modeler | modelé
 phob	| qui a peur de $1 |	la peur | la peur de $1 | avoir peur | appeuré
-mèr    | qui est une partie de $1 | la part | la partie de $1 | partitionner | diviser
-mer    | qui est une partie de $1 | la part | la partie de $1 | partitionner | diviser
-thèqu  | qui contient $1 | la boîte | le contenant de $1 | contenir | emboîté
-thequ  | qui contient $1 | la boîte | le contenant de $1 | contenir | emboîté
+mèr     | qui est une partie de $1 | la part | la partie de $1 | partitionner | diviser
+mer     | qui est une partie de $1 | la part | la partie de $1 | partitionner | diviser
+thèqu   | qui contient $1 | la boîte | le contenant de $1 | contenir | emboîté
+thequ   | qui contient $1 | la boîte | le contenant de $1 | contenir | emboîté
+gen     | qui génère $1 | la création | la création de $1 | créer | créé
+gén     | qui génère $1 | la création | la création de $1 | créer | créé
+génèr   | qui génère $1 | la création | la création de $1 | créer | créé
+entrop  | qui tourne autour de $1 | le désordre | le désordre de $1 | tourner | autour
+lud     | qui joue avec $1 | le jeu | le jeu de $1 | jouer | ludique
 
-typ	| qui est formé à partir d'un modèle de $1 | un modèle | le modèle de $1 |
+typ	| qui est formé à partir d'un modèle de $1 | le modèle | le modèle de $1 |
 tax	| qui est lié à l'ordre de $1 	| l'arrangement | l'ordre de $1 | ordonner | ordonné
 gon	| qui possède des côtés liés à $1 | un côté | les côtés de $1 | | à côtés
 later	| qui est à côté de $1 | un côté | le côté de $1 | | lateral
+lateral	| qui est à côté de $1 | un côté | le côté de $1 | | lateral
 latér	| qui est à côté de $1 | un côté | le côté de $1 | | latéral
 èdr	| qui possède des faces liées à $1 | une face | les faces de $1 | | facique
-scop 	| qui observe $1  | une observation  | l'observation de $1 | observer |
+scop 	| qui observe $1  | une observation  | l'observation de $1 | observer | observé
 nym	| qui possède un nom lié à $1 | le nom | le nom de $1 | nommer | nommé
 pod	| $1 qui est relatif aux pieds | les pieds | les pieds de $1 | marcher | |
 nom	| qui est le terme de $1       | le terme | le terme de $1 | nommer | nommé
 nôm	| qui est le terme de $1       | le terme | le terme de $1 | nommer | nommé
 lys	| qui est en lien avec la décomposition de $1 | la dissolution | la décomposition de $1 | décomposer | décomposé |
+stas	| qui arrête $1 | l'immobilité | la stabilité de $1 | arrêter | immobile |
+stabil	| qui arrête $1 | l'immobilité | la stabilité de $1 | arrêter | immobile |
+stat	| qui arrête $1 | l'immobilité | la stabilité de $1 | arrêter | immobile |
+static	| qui arrête $1 | l'immobilité | la stabilité de $1 | arrêter | immobile |
 
 mod	| qui est à la manière de $1  	| la manière | la méthode de $1 | prodeder | modéré
-trigo	| | un frottement | le frottement de $1 | frotter | | le frottement de $1 sur $2
-tron  	| $1 qui est établi à partir de électron | un électron | l'électron de $1 |
+trigo	| | un frottement | le frottement de $1 | frotter | frotté | le frottement de $1 sur $2
+tron  	| $1 qui est établi à partir de électron | l'électron | l'électron de $1 |  |
 embry	| | l'embryon | le foetus de $1 |
 
 #### UTILITAIRES ####
@@ -143,6 +162,7 @@ isme 	| qui correspond à $1 | | | | |
 iste 	| personne versée dans $1 | | | | |
 tif	| qui concerne la qualité de $1 |||
 ale	| qui est $1 |
+ité	| qui est relatif à $1 |
 ide	| qui a l'aspect de $1 | l'aspect | la forme visible de $1 |||
 idé	|     		       | l'aspect | la forme originelle de $1 || idéal |
 id	|					| | l'aspect de $1 | |

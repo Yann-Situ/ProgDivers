@@ -12,6 +12,8 @@
 $1 o+ * ie+tie -> POSS($1,*)
 * o+ $1 ie+tie -> POSS($1,*)
 $1 ie -> N($1)
+$1 è+ se -> N($1)
+$1 è+ de -> N($1)
 
 $1 o+ * t+ isme -> A1(isme,POSS($1,*))
 * o+ $1 t+ isme -> A1(isme,POSS($1,*))
@@ -32,6 +34,11 @@ $1 ta+ ti f+ve -> A1(tif,N($1))
 $1 o+ * al e+ -> A1(ique,A2(CONJONC_ADJ,*,ADJ($1)))
 * o+ $1 al e+ -> A1(ique,A2(CONJONC_ADJ,*,ADJ($1)))
 $1 al e+ -> A1(ale,ADJ($1))
+
+
+$1 o+ * t+ al+ic ité -> A1(ité,A2(CONJONC_ADJ,*,ADJ($1)))
+* o+ $1 t+ al+ic ité -> A1(ité,A2(CONJONC_ADJ,*,ADJ($1)))
+$1 t+ al+ic ité -> A1(ité,N($1))
 
 $1 o+ * t+ oï+i de -> A1(ide,POSS($1,*))
 * o+ $1 t+ oï+i de -> A1(ide,POSS($1,*))

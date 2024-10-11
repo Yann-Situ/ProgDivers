@@ -98,7 +98,7 @@ class NodeWord():
                     if DEBUG : print(tok.token+" is not in the dico.")
                     raise NotGoodNode(self)
 
-                trad = dico[tok.token][sens-1] # -1 car le dico commence ces sens à 0 mais le sens 0 correspond au token... on mais donc -1
+                trad = dico[tok.token][sens-1] # -1 car le dico commence ces sens à 0 mais le sens 0 correspond au token... on met donc -1
                 if trad == '': # cas de certains token n'ayant pas de sens pour tous
                     if DEBUG : print(tok.token+" doesn't have the meaning "+str(sens))
                     raise NotGoodNode(self)
